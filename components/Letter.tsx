@@ -4,18 +4,19 @@ import Navbar from "./ui/Floating-navbar";
 import Footer from "./Footer";
 import "./Letter.css";
 import { letter } from "@/data";
-import EmailPopupForm from "./EmailPopupForm";
+import SubscriptionForm from "./EmailPopupForm";
+// import EmailPopupForm from "./EmailPopupForm";
 
 const Letter = () => {
-  const [showPopup, setShowPopup] = useState<boolean>(false);
+  // const [showPopup, setShowPopup] = useState<boolean>(false);
 
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
+  // const togglePopup = () => {
+  //   setShowPopup(!showPopup);
+  // };
 
-  const closePopup = () => {
-    setShowPopup(false);
-  };
+  // const closePopup = () => {
+  //   setShowPopup(false);
+  // };
 
   return (
     <>
@@ -27,15 +28,7 @@ const Letter = () => {
             Our <span className="text-teal-400">Letters</span>
           </h1>
         </div>
-        <div className="grid place-items-center">
-          <button
-            onClick={togglePopup}
-            className="bg-white border-2 border-teal-200 text-teal-400 font-bold p-2 rounded-lg m-4 text-sm"
-          >
-            Subscribe Us
-          </button>
-          {showPopup && <EmailPopupForm onClose={closePopup} />}
-        </div>
+        <SubscriptionForm />
 
         <div className="grid place-items-center lg:pt-16 lg:px-48 md:pt-8 md:px-24 px-8">
           {letter.map((item) => (

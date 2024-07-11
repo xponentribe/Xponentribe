@@ -20,7 +20,7 @@ const Contact = () => {
     if (status) {
       const timer = setTimeout(() => {
         setStatus(null);
-      }, 5000);
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
