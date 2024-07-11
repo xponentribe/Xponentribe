@@ -32,7 +32,12 @@ const Team = () => {
                 className="content h-screen"
                 style={{ backgroundColor: "#0000006b" }}
               >
-                <h1 className="font-bold text-2xl text-white">{item.name}</h1>
+                <h1 className="font-bold text-2xl text-white">
+                  {item.name}
+                  <span className="text-sm text-gray-400 float-right">
+                    more{" "}
+                  </span>
+                </h1>
                 <h4 className="text-xl font-bold text-teal-400 mt-1">
                   {item.position}
                 </h4>

@@ -52,14 +52,14 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-40 w-screen bg-white shadow-gray-300 shadow-lg">
       <div className=" flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0 mx-20">
-        <div className="flex items-center justify-start gap-x-44 sm:gap-x-0  ">
+        <div className="flex items-center justify-start gap-x-24 sm:gap-x-0  ">
           <a href="/">
             <Image
               src="/XT-02.svg"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               alt="Picture of the author"
-              className="lg:hidden relative right-16"
+              className="lg:hidden relative right-8"
             />
           </a>
           <button
@@ -67,23 +67,21 @@ export default function Navbar() {
             aria-haspopup="dialog"
             aria-expanded="false"
             aria-controls="radix-:R5b6t5a:"
-            className="relative left-14 md:left"
+            className="relative left-24 md:left"
             data-state="closed"
             onClick={() => setIsHamburger(true)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="md:hidden h-6 w-6 border-2 border-primary rounded-sm"
+              fill="currentColor"
+              className="md:hidden h-6 w-6 "
             >
-              <polyline points="9 18 15 12 9 6"></polyline>
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd"
+              />
             </svg>
           </button>
 
@@ -218,7 +216,7 @@ export default function Navbar() {
                       style={
                         {
                           "--radix-navigation-menu-viewport-width": "165px",
-                          "--radix-navigation-menu-viewport-height": "125px",
+                          "--radix-navigation-menu-viewport-height": "70px",
                           position: "relative",
                           left: "150vh",
                         } as React.CSSProperties
@@ -243,7 +241,7 @@ export default function Navbar() {
                               </div>
                             </a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                               href="/blogs"
@@ -253,7 +251,7 @@ export default function Navbar() {
                                 Blogs
                               </div>
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -368,12 +366,12 @@ export default function Navbar() {
                 >
                   Letter
                 </a>
-                <a
+                {/* <a
                   className="flex items-center text-md text-primary font-normal"
                   href="/blog"
                 >
                   Blogs
-                </a>
+                </a> */}
                 <a
                   className="flex items-center text-md text-primary font-normal"
                   href="/contact"

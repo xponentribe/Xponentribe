@@ -29,14 +29,11 @@ const Contact = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      const response = await axios.post(
-        "https://xponent-tribe-client.vercel.app/api/send",
-        {
-          name,
-          email,
-          message,
-        }
-      );
+      const response = await axios.post("api/send", {
+        name,
+        email,
+        message,
+      });
       console.log("Response:", response);
 
       setStatus({ message: "Email sent successfully!", type: "success" });
@@ -54,7 +51,7 @@ const Contact = () => {
       <Navbar />
       <div className="bg-white pb-20 pt-32">
         <div>
-          <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
+          <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl sm:p-8">
             Connect with <span className="text-teal-400">Us</span>
           </h1>{" "}
         </div>
