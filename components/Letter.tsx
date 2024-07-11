@@ -16,48 +16,26 @@ const Letter = () => {
   const closePopup = () => {
     setShowPopup(false);
   };
-  // const handleSaveToCloudinary = async (content: string) => {
-  //   try {
-  //     await axios.post("http://localhost:3000/api/uploadToCloudinary", {
-  //       content,
-  //     });
-  //     alert("File uploaded to Cloudinary successfully!");
-  //   } catch (error) {
-  //     alert("Failed to upload file to Cloudinary");
-  //   }
-  // };
 
-  // const [text, setText] = useState("");
-
-  // const handleSubmit = async (event: React.FormEvent) => {
-  //   event.preventDefault();
-
-  //   const response = await fetch("/api/save-text", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({ text }),
-  //   });
-
-  //   if (response.ok) {
-  //     alert("Text saved successfully!");
-  //   } else {
-  //     alert("Failed to save text.");
-  //   }
-  // };
   return (
     <>
       <Navbar />
 
       <div className="pt-28 bg-white">
-        <div>
+        <div className="">
           <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
             Our <span className="text-teal-400">Letters</span>
           </h1>
         </div>
-
-        <div></div>
+        <div className="grid place-items-center">
+          <button
+            onClick={togglePopup}
+            className="bg-white border-2 border-teal-200 text-teal-400 font-bold p-2 rounded-lg m-4 text-sm"
+          >
+            Subscribe Us
+          </button>
+          {showPopup && <EmailPopupForm onClose={closePopup} />}
+        </div>
 
         <div className="grid place-items-center lg:pt-16 lg:px-48 md:pt-8 md:px-24 px-8">
           {letter.map((item) => (
@@ -100,13 +78,34 @@ const Letter = () => {
                   />
                 </svg>
               </a>
-              <button
-                onClick={togglePopup}
-                className="bg-red-500 text-white p-2 rounded-lg m-4 text-sm"
-              >
-                Subscribe Us
-              </button>
-              {showPopup && <EmailPopupForm onClose={closePopup} />}
+
+              {/* <div>
+                {!isSubscribed ? (
+                  <form onSubmit={handleSubmit} className="pt-8">
+                    <input
+                      type="email"
+                      value={email}
+                      id="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your input"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      className="bg-white text-teal-400 p-2 ml-2 rounded-lg border-2"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                ) : (
+                  <button
+                    disabled
+                    className="bg-white text-teal-400 p-2 ml-2 rounded-lg border-2 mt-4"
+                  >
+                    Subscribed
+                  </button>
+                )}
+              </div> */}
             </div>
           ))}
         </div>

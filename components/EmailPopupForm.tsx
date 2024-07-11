@@ -33,8 +33,8 @@ const EmailPopupForm: React.FC<EmailPopupFormProps> = ({ onClose }) => {
 
   return (
     <div className="popup">
-      <div className="popup-content">
-        <span className="close" onClick={onClose}>
+      <div className="popup-content bottom-2 bg-slate-200 p-4 rounded-xl m-8">
+        <span className="close cursor-pointer" onClick={onClose}>
           &times;
         </span>
 
@@ -54,9 +54,9 @@ const EmailPopupForm: React.FC<EmailPopupFormProps> = ({ onClose }) => {
             <button
               data-copy-to-clipboard-target="npm-install"
               type="submit"
-              className="col-span-2 w-32 text-white p-2 m-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 items-center inline-flex justify-center"
+              className="col-span-2 w-40 text-white p-2 m-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 items-center inline-flex justify-center"
             >
-              Subscribe Us
+              Subscribe
             </button>
           </div>
         </form>

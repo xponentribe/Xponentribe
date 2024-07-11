@@ -42,7 +42,7 @@ export const navItems = [
       desc1: "· 12+ years of experience in investments with organizations like White Oak Capital, DMI Finance, &  KPMG.",
       desc2:"· MBA from SP Jain Global School of Management.",
       img: "/Sagar.jpg",
-      twitter: "/",
+      twitter: "",
       linkedin: "https://www.linkedin.com/in/aryasagar/"
      
     },
@@ -69,8 +69,8 @@ export const navItems = [
     },
     {
       id: 3,
-      head: "Maximise time horizon for reinvestment",
-      sub: "Management team taking decisions to optimize spread and time horizon",
+      head: "Management team taking decisions to optimize spread and time horizon",
+      // sub: "Management team taking decisions to optimize spread and time horizon",
       desc: "Managements that have demonstrated ability to adapt, capital allocation, Dispassionate decision-making, Good corporate governance.",
       phiimg: "/hands.svg"
     }

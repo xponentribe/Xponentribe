@@ -29,11 +29,14 @@ const Contact = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/api/send", {
-        name,
-        email,
-        message,
-      });
+      const response = await axios.post(
+        "https://xponent-tribe-client.vercel.app/api/send",
+        {
+          name,
+          email,
+          message,
+        }
+      );
       console.log("Response:", response);
 
       setStatus({ message: "Email sent successfully!", type: "success" });
@@ -52,12 +55,12 @@ const Contact = () => {
       <div className="bg-white pb-20 pt-32">
         <div>
           <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
-            Connect with our <span className="text-teal-400">Team</span>
+            Connect with <span className="text-teal-400">Us</span>
           </h1>{" "}
         </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-1">
           <Lottie animationData={animationData} className="h-96" />
-          <form className="p-16" onSubmit={handleSubmit}>
+          <form className="lg:p-16 md:p-8 p-8" onSubmit={handleSubmit}>
             <label
               htmlFor="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -147,10 +150,10 @@ const Contact = () => {
             )}
           </form>
         </div>
-        <div className="grid place-items-center p-16">
+        <div className="grid place-items-center p-8">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.3068188869584!2d72.8207027!3d18.962052499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce1374ff0223%3A0x7a482d76b3b7b69e!2sBharat%20Nagar%20Society!5e0!3m2!1sen!2sin!4v1720689120843!5m2!1sen!2sin"
-            height="450"
+            height="350"
             style={{ border: "0" }}
             className="w-full"
             allowFullScreen
