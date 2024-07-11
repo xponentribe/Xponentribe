@@ -52,7 +52,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-40 w-screen bg-white shadow-gray-300 shadow-lg">
       <div className=" flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0 mx-20">
-        <div className="flex items-center justify-start gap-x-24 sm:gap-x-0  ">
+        <div className="flex items-center justify-start gap-x-16 sm:gap-x-0  ">
           <a href="/">
             <Image
               src="/XT-02.svg"
