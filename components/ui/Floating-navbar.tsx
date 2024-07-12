@@ -118,7 +118,7 @@ export default function Navbar() {
                     Home
                   </a>
                 </li>
-                {true ? (
+                {isShow0 ? (
                   <div
                     className="absolute left-0 top-10 flex justify-center"
                     onMouseOver={handleMouseOver}
@@ -204,7 +204,7 @@ export default function Navbar() {
                     </svg>
                   </button>
                 </li>
-                {true ? (
+                {isShow1 ? (
                   <div
                     className="absolute left-0 top-10 flex justify-center "
                     onMouseOver={handleMouseOver1}
