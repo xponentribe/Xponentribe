@@ -83,7 +83,7 @@ const Contact = () => {
                 value={email}
                 id="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="name@flowbite.com"
+                placeholder="Enter Your Email"
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
@@ -113,7 +113,7 @@ const Contact = () => {
                 onChange={(e) => setName(e.target.value)}
                 required
                 className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="elonmusk"
+                placeholder="Enter Your Name"
               />
             </div>
 

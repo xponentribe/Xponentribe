@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       <Navbar />
       <div className="pt-32 bg-white">
-        <div className="h-screen w-full  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+        <div className=" w-full  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center " />
         </div>
@@ -25,13 +25,13 @@ const Hero = () => {
                 n
               </h1>
 
-              <p className="text-center md:tracking-wider text-black mb-4 text-sm md:text-lg lg:text-xl py-6">
+              <p className="text-center md:tracking-wider text-black text-sm md:text-lg lg:text-xl py-5">
                 The key driver of returns in the compounding equation is the
                 exponent &quot;^n&quot;. Time does the heavy lifting of returns,
                 and therefore focusing on longevity is the secret to
                 wealth creation.
               </p>
-              <p className="text-center md:tracking-wider text-black mb-4 text-sm md:text-lg lg:text-xl py-6">
+              <p className="text-center md:tracking-wider text-black mb-4 text-sm md:text-lg lg:text-xl pb-6">
                 At Xponent Tribe, we aim to deliver sustained value through a
                 culture of long-term thinking and a rigorous process that builds
                 a portfolio of resilient companies.
