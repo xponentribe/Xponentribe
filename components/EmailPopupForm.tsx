@@ -111,7 +111,7 @@ const SubscriptionForm: React.FC = () => {
     setIsSubscribed(true);
     setShowForm(false);
     try {
-      const response = await axios.post("api/send", {
+      const response = await axios.post(`${process.env.URL}/api/send`, {
         email,
       });
       console.log("Response:", response);
@@ -134,7 +134,7 @@ const SubscriptionForm: React.FC = () => {
               onClick={() => setShowForm(true)}
               className="bg-white border-2 border-teal-200 text-teal-400 font-bold p-2 rounded-lg m-4 text-sm"
             >
-              Subscribe Us
+              Subscribe To our letter
             </button>
           ) : (
             <form onSubmit={handleSubmit} className="grid place-items-center">

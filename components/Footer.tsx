@@ -20,7 +20,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-2 sm:gap-2 sm:grid-cols-3">
             <div>
               <ul className="text-gray-500 dark:text-gray-400 font-medium ">
                 <li className="mb-4">

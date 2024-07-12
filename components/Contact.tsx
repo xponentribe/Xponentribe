@@ -29,7 +29,7 @@ const Contact = () => {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      const response = await axios.post("api/send", {
+      const response = await axios.post(`${process.env.URL}/api/send`, {
         name,
         email,
         message,

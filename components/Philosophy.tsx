@@ -77,15 +77,15 @@ const Philosophy = () => {
               alt={""}
             />
             <div className="projcard-textbox">
-              <div className="projcard-title">And a Third Card</div>
+              <div className="projcard-title">Right captain for the ship</div>
               <div className="projcard-subtitle">
                 Management team taking decisions to optimize spread and time
                 horizon
               </div>
               <div className="projcard-description py-6">
-                Managements that have demonstrated ability to adapt, capital
-                allocation, Dispassionate decision-making, Good corporate
-                governance.
+                Managements that have demonstrated the ability to adapt and make
+                dispassionate decisions in addition to good corporate governance
+                and capital allocation.
               </div>
             </div>
           </div>

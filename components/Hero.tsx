@@ -26,10 +26,10 @@ const Hero = () => {
               </h1>
 
               <p className="text-center md:tracking-wider text-black mb-4 text-sm md:text-lg lg:text-xl py-6">
-                We believe that the key driver of returns in the compounding
-                equation is the exponent &quot;^n&quot;. Time is the exponent
-                that does the heavy lifting of returns, and therefore focusing
-                on longevity is the secret to wealth creation.
+                The key driver of returns in the compounding equation is the
+                exponent &quot;^n&quot;. Time does the heavy lifting of returns,
+                and therefore focusing on longevity is the secret to
+                wealth creation.
               </p>
             </div>
           </div>

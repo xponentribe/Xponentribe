@@ -69,9 +69,9 @@ export const navItems = [
     },
     {
       id: 3,
-      head: "Management team taking decisions to optimize spread and time horizon",
-      // sub: "Management team taking decisions to optimize spread and time horizon",
-      desc: "Managements that have demonstrated ability to adapt, capital allocation, Dispassionate decision-making, Good corporate governance.",
+      head: "Right captain for the ship",
+      sub: "Management team taking decisions to optimize spread and time horizon",
+      desc: "Managements that have demonstrated the ability to adapt and make dispassionate decisions in addition to good corporate governance and capital allocation.",
       phiimg: "/hands.svg"
     }
   ]

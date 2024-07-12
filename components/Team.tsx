@@ -15,7 +15,7 @@ const Team = () => {
       <div className="pt-24 bg-white">
         <div>
           <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
-            Leadership <span className="text-teal-400">Team</span>
+            Founding <span className="text-teal-400">Team</span>
           </h1>
         </div>
         <div className="cards pt-24 pb-24 grid place-items-center sm:grid-cols-1">

@@ -1,0 +1,10 @@
+@media screen and (max-width: 1440px) {
+  .about {
+    left: 96vh;
+    position: relative;
+  }
+  .letter {
+    left: 120vh;
+    position: relative;
+  }
+}
