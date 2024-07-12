@@ -111,7 +111,8 @@ const SubscriptionForm: React.FC = () => {
     setIsSubscribed(true);
     setShowForm(false);
     try {
-      const response = await axios.post(`${process.env.URL}/api/send`, {
+      const response = await axios.post(`/api/send`, {
+        //${process.env.URL}
         email,
       });
       console.log("Response:", response);
