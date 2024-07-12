@@ -118,7 +118,7 @@ export default function Navbar() {
                     Home
                   </a>
                 </li>
-                {isShow0 ? (
+                {true ? (
                   <div
                     className="absolute left-0 top-10 flex justify-center"
                     onMouseOver={handleMouseOver}
@@ -133,7 +133,7 @@ export default function Navbar() {
                           "--radix-navigation-menu-viewport-width": "165px",
                           "--radix-navigation-menu-viewport-height": "125px",
                           position: "relative",
-                          left: "105vh",
+                          left: "135vh",
                         } as React.CSSProperties
                       }
                     >
@@ -204,7 +204,7 @@ export default function Navbar() {
                     </svg>
                   </button>
                 </li>
-                {isShow1 ? (
+                {true ? (
                   <div
                     className="absolute left-0 top-10 flex justify-center "
                     onMouseOver={handleMouseOver1}
@@ -219,7 +219,7 @@ export default function Navbar() {
                           "--radix-navigation-menu-viewport-width": "165px",
                           "--radix-navigation-menu-viewport-height": "70px",
                           position: "relative",
-                          left: "125vh",
+                          left: "150vh",
                         } as React.CSSProperties
                       }
                     >
