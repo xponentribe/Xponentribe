@@ -1,10 +1,10 @@
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .about {
     left: 105vh;
     position: relative;
   }
   .letter {
-    left: 115vh;
+    left: 125vh;
     position: relative;
   }
 }

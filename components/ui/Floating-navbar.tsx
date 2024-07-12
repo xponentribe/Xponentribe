@@ -133,7 +133,7 @@ export default function Navbar() {
                           "--radix-navigation-menu-viewport-width": "165px",
                           "--radix-navigation-menu-viewport-height": "125px",
                           position: "relative",
-                          left: "135vh",
+                          left: "105vh",
                         } as React.CSSProperties
                       }
                     >
@@ -219,7 +219,7 @@ export default function Navbar() {
                           "--radix-navigation-menu-viewport-width": "165px",
                           "--radix-navigation-menu-viewport-height": "70px",
                           position: "relative",
-                          left: "150vh",
+                          left: "125vh",
                         } as React.CSSProperties
                       }
                     >
