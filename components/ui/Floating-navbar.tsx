@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import "./Navbar.css";
 
 export default function Navbar() {
   const [isHamburger, setIsHamburger] = useState(false);

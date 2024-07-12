@@ -38,12 +38,12 @@ const Letter = () => {
               key={item.id}
             >
               <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 font-bold tracking-tight text-gray-900 dark:text-white sm:text-lg md:text-lg lg:text-2xl">
                   {item.heading}
                 </h5>
               </a>
               <hr className="" />
-              <p className="mb-3 pt-4 font-normal text-gray-700 dark:text-gray-400 text-justify">
+              <p className="mb-3 pt-4 font-normal text-gray-700 dark:text-gray-400 text-justify sm:text-sms">
                 {item.desc}
               </p>
               <p className="mb-3 font-normal text-gray-900 dark:text-gray-400">

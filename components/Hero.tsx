@@ -31,6 +31,11 @@ const Hero = () => {
                 and therefore focusing on longevity is the secret to
                 wealth creation.
               </p>
+              <p className="text-center md:tracking-wider text-black mb-4 text-sm md:text-lg lg:text-xl py-6">
+                At Xponent Tribe, we aim to deliver sustained value through a
+                culture of long-term thinking and a rigorous process that builds
+                a portfolio of resilient companies.
+              </p>
             </div>
           </div>
         </div>
