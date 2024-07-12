@@ -106,7 +106,7 @@ export default function Navbar() {
               </a>
               <ul
                 data-orientation="horizontal"
-                className="group flex flex-1 list-none items-center justify-center space-x-1 "
+                className="group flex flex-1 list-none items-center justify-center space-x-1 relative"
                 dir="ltr"
               >
                 <li>
@@ -133,7 +133,8 @@ export default function Navbar() {
                           "--radix-navigation-menu-viewport-width": "165px",
                           "--radix-navigation-menu-viewport-height": "125px",
                           position: "relative",
-                          left: "135vh",
+                          left: "13rem",
+                          // left: "135vh",
                         } as React.CSSProperties
                       }
                     >
@@ -219,7 +220,8 @@ export default function Navbar() {
                           "--radix-navigation-menu-viewport-width": "165px",
                           "--radix-navigation-menu-viewport-height": "70px",
                           position: "relative",
-                          left: "150vh",
+                          left: "22rem",
+                          // left: "150vh",
                         } as React.CSSProperties
                       }
                     >

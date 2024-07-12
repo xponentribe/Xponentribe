@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://drive.google.com/file/d/1LhMxEY9I20Hn9Om9zGTx26lOc_1QYRfZ/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1PqiMrBvWp8v2P6llyYNqDWpIdgvZx38P/view?usp=drive_link"
                     className="hover:text-teal-400"
                     target="_blank"
                   >
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="contact@xponentribe.com"
+                    href="mailto:contact@xponentribe.com"
                     className="hover:text-teal-400"
                     target="_blank"
                   >
@@ -118,14 +118,14 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="mailto:contact@xponentribe.com"
                     className="hover:text-teal-400 flex"
                     target="_blank"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 48 48"
-                      className="w-10 h-6 pr-2"
+                      className="w-10 h-6 pr-2 "
                     >
                       <path
                         fill="#4caf50"
