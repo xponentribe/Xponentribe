@@ -9,18 +9,18 @@ export const navItems = [
   export const letter = [
     {
       id: 1,
-      heading: "Heading 1",
-      desc: "Here are the biggest enterprise technology acquisitions of 2021 sofar, in reverse chronological order. Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Deserunt delectus nulla hiccorrupti veniam illo modi, ab non, expedita perferendis soluta reprehenderit molestias enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic delectus tenetur enim odit blanditiis, distinctio temporibus eius deserunt dolorem quam quaerat rem, quae saepe nulla labore commodi dicta? Asperiores, sed. Quasi optio omnis, ipsam veniam perspiciatis dolore laudantium, tempore in dolor, at natus qui impedit quia aliquid itaque fugiat.",
-      date: "5 March 2024",
+      heading: "Good Behaviour, Bad Behaviour",
+      desc: "In this letter, we delve into the critical role of behaviour in driving investment success. In an environment flooded with information and unpredictability, our primal instincts often prompt impulsive actions. Recognizing these tendencies, we stress the importance of establishing robust guardrails to enhance our success. Our discussion highlights the significance of patience, careful evaluation, and cultivating a supportive ecosystem for long-term value creation.",
+      date: "12 July 2024",
       link: "https://drive.google.com/file/d/1d4Sh8mLNYeZljbX40jrXqeCUGneu6bgH/view?usp=sharing",
     },
-    {
-      id: 2,
-      heading: "Heading 2",
-      desc: "Here are the biggest enterprise technology acquisitions of 2021 sofar, in reverse chronological order. Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Deserunt delectus nulla hiccorrupti veniam illo modi, ab non, expedita perferendis soluta reprehenderit molestias enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic delectus tenetur enim odit blanditiis, distinctio temporibus eius deserunt dolorem quam quaerat rem, quae saepe nulla labore commodi dicta? Asperiores, sed. Quasi optio omnis, ipsam veniam perspiciatis dolore laudantium, tempore in dolor, at natus qui impedit quia aliquid itaque fugiat.",
-      date: "5 June 2024",
-      link: "https://drive.google.com/file/d/1d4Sh8mLNYeZljbX40jrXqeCUGneu6bgH/view?usp=sharing",
-    }
+    // {
+    //   id: 2,
+    //   heading: "Heading 2",
+    //   desc: "Here are the biggest enterprise technology acquisitions of 2021 sofar, in reverse chronological order. Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Deserunt delectus nulla hiccorrupti veniam illo modi, ab non, expedita perferendis soluta reprehenderit molestias enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic delectus tenetur enim odit blanditiis, distinctio temporibus eius deserunt dolorem quam quaerat rem, quae saepe nulla labore commodi dicta? Asperiores, sed. Quasi optio omnis, ipsam veniam perspiciatis dolore laudantium, tempore in dolor, at natus qui impedit quia aliquid itaque fugiat.",
+    //   date: "5 June 2024",
+    //   link: "https://drive.google.com/file/d/1d4Sh8mLNYeZljbX40jrXqeCUGneu6bgH/view?usp=sharing",
+    // }
   ]
 
   export const team = [

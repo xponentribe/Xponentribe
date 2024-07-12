@@ -135,7 +135,7 @@ const SubscriptionForm: React.FC = () => {
               onClick={() => setShowForm(true)}
               className="bg-white border-2 border-teal-200 text-teal-400 font-bold p-2 rounded-lg m-4 text-sm"
             >
-              Subscribe To our letter
+              Subscribe to our letter
             </button>
           ) : (
             <form onSubmit={handleSubmit} className="grid place-items-center">
