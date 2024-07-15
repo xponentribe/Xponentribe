@@ -240,7 +240,7 @@ export default function Navbar() {
                               data-radix-collection-item=""
                             >
                               <div className="text-sm font-medium leading-none">
-                                Letter
+                                Letters
                               </div>
                             </a>
                           </li>
@@ -367,7 +367,7 @@ export default function Navbar() {
                   className="flex items-center text-md text-primary font-normal"
                   href="/letter"
                 >
-                  Letter
+                  Letters
                 </a>
                 {/* <a
                   className="flex items-center text-md text-primary font-normal"
