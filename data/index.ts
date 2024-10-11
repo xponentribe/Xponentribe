@@ -9,7 +9,7 @@ export const navItems = [
   export const letter = [
     {
       id: 1,
-      heading: "Good Behaviour, Bad Behaviour",
+      heading: "Q1FY25 Update",
       desc: "In this letter, we delve into the critical role of behaviour in driving investment success. In an environment flooded with information and unpredictability, our primal instincts often prompt impulsive actions. Recognizing these tendencies, we stress the importance of establishing robust guardrails to enhance our success. Our discussion highlights the significance of patience, careful evaluation, and cultivating a supportive ecosystem for long-term value creation.",
       date: "12 July 2024",
       link: "https://drive.google.com/open?id=1woCmue2DiXBUJqX58pQBhPorzlPfFpqF&usp=drive_copy",
