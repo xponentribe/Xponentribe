@@ -87,6 +87,15 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
+                    href="https://drive.google.com/file/d/1KTQ-GVCLDncVAjtfEz4aQArNP2k_wowu/view"
+                    className=" hover:text-teal-400"
+                    target="_blank"
+                  >
+                    Annexure D
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
                     href="https://www.linkedin.com/company/xponent-tribe/"
                     className="hover:text-teal-400 flex"
                     target="_blank"
