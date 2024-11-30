@@ -88,7 +88,7 @@ const Footer = () => {
                 <li className="mb-4">
                   <a
                     href="https://drive.google.com/file/d/1KTQ-GVCLDncVAjtfEz4aQArNP2k_wowu/view"
-                    className=" hover:text-teal-400"
+                    className=" hover:text-teal-400 ml-2"
                     target="_blank"
                   >
                     Annexure D
