@@ -25,7 +25,7 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium ">
                 <li className="mb-4">
                   <a
-                    href=" https://drive.google.com/file/d/1rp0FNdol3ZDgIIADtzRUj0_u8M75zM3i/view?usp=drive_link"
+                    href=" https://drive.google.com/file/d/1T6GindgcrXMQtsCKiKqCgQ_k5bXM-wOl/view?usp=drive_link"
                     className=" hover:text-teal-400"
                     target="_blank"
                   >
