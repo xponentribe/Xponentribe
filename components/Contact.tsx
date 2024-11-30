@@ -53,7 +53,7 @@ const Contact = () => {
       <div className="bg-white pb-20 pt-32">
         <div>
           <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-3xl lg:text-3xl sm:p-8">
-            Connect with us for PMS direct onboarding or other <span className="text-teal-400">queries</span>
+            Connect with us for PMS direct onboarding or other queries
           </h1>{" "}
         </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-1">
