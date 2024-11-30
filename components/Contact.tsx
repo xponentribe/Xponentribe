@@ -52,8 +52,8 @@ const Contact = () => {
       <Navbar />
       <div className="bg-white pb-20 pt-32">
         <div>
-          <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl sm:p-8">
-            Connect with <span className="text-teal-400">Us</span>
+          <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-3xl lg:text-3xl sm:p-8">
+            Connect with us for PMS direct onboarding or other <span className="text-teal-400">queries</span>
           </h1>{" "}
         </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-1">
