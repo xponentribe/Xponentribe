@@ -20,7 +20,7 @@ export const navItems = [
       desc: "In our second quarterly letter, we delve into the current market dynamics, likening it to a game of throwing darts blindfolded—where luck can often be mistaken for skill. This environment reinforces the need to remain disciplined in identifying fundamentally strong businesses. Medi Assist, a standout in the TPA industry, embodies the traits we value, including longevity, resilience, and leadership.",
       date: "11 October 2024",
       link: "https://drive.google.com/file/d/1Nlr08NkwHNK-Bfme7fQZ7leeP0aSS-Si/view?usp=drive_link",
-      }
+      },
     {
       id: 3,
       heading: "Q3FY25 Update",
