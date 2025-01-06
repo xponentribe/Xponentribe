@@ -21,13 +21,13 @@ export const navItems = [
       date: "11 October 2024",
       link: "https://drive.google.com/file/d/1Nlr08NkwHNK-Bfme7fQZ7leeP0aSS-Si/view?usp=drive_link",
       }
-    // {
-    //   id: 2,
-    //   heading: "Heading 2",
-    //   desc: "Here are the biggest enterprise technology acquisitions of 2021 sofar, in reverse chronological order. Lorem ipsum dolor sit ametconsectetur, adipisicing elit. Deserunt delectus nulla hiccorrupti veniam illo modi, ab non, expedita perferendis soluta reprehenderit molestias enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic delectus tenetur enim odit blanditiis, distinctio temporibus eius deserunt dolorem quam quaerat rem, quae saepe nulla labore commodi dicta? Asperiores, sed. Quasi optio omnis, ipsam veniam perspiciatis dolore laudantium, tempore in dolor, at natus qui impedit quia aliquid itaque fugiat.",
-    //   date: "5 June 2024",
-    //   link: "https://drive.google.com/file/d/1d4Sh8mLNYeZljbX40jrXqeCUGneu6bgH/view?usp=sharing",
-    // }
+    {
+      id: 3,
+      heading: "Blurb for the website",
+      desc: "In this letter, we explore the transformative rise of GLP-1 drugs, which have captured global attention as revolutionary weight-loss treatments. Brands like Ozempic and Wegovy have sparked widespread buzz, even prompting Elon Musk to call GLP-1 drugs 'the single biggest positive effect on healthcare and quality of life in the 21st century'. We delve into the factors driving their meteoric demand, analyze their intricate supply chain, and highlight opportunities for listed Indian players. Whether you're an investor or simply curious about groundbreaking advancements, we believe this is a story worth knowing. Hope you enjoy the read!",
+      date: "6 January 2025",
+      link: "https://drive.google.com/file/d/1Y95O-YayCF47C9frdtercKF4AZlHLR1l/view",
+    }
   ]
 
   export const team = [
