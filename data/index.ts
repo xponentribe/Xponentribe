@@ -27,6 +27,13 @@ export const navItems = [
       desc: "In this letter, we explore the transformative rise of GLP-1 drugs, which have captured global attention as revolutionary weight-loss treatments. Brands like Ozempic and Wegovy have sparked widespread buzz, even prompting Elon Musk to call GLP-1 drugs 'the single biggest positive effect on healthcare and quality of life in the 21st century'. We delve into the factors driving their meteoric demand, analyze their intricate supply chain, and highlight opportunities for listed Indian players. Whether you're an investor or simply curious about groundbreaking advancements, we believe this is a story worth knowing. Hope you enjoy the read!",
       date: "6 January 2025",
       link: "https://drive.google.com/file/d/1Y95O-YayCF47C9frdtercKF4AZlHLR1l/view",
+    },
+      {
+      id: 4,
+      heading: "Q4FY25 Update",
+      desc: "In this letter, we deep dive into a disruptive force transforming one of the world’s oldest luxury industries: lab-grown diamonds (LGDs). What began as a niche is now triggering a structural shift across the global jewellery value chain—challenging long-standing cartels and unlocking opportunities for new, nimble players. We break down what LGDs are, how their value chain works, why prices have collapsed (and why they may now be near a floor), and highlight where promising opportunities may lie. Whether you're intrigued by innovation or interested in the future of jewellery, this is a story worth knowing. Hope you enjoy the read!",
+      date: "12 April 2025",
+      link: "https://drive.google.com/file/d/1abQiKGGeC1tfb5_aw2LBRyw1aat-K9hy/view?usp=drive_link",
     }
   ]
 
