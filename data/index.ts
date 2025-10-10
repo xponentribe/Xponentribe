@@ -24,14 +24,14 @@ export const navItems = [
     {
       id: 3,
       heading: "Q3FY25 Update",
-      desc: "In this letter, we explore the transformative rise of GLP-1 drugs, which have captured global attention as revolutionary weight-loss treatments. Brands like Ozempic and Wegovy have sparked widespread buzz, even prompting Elon Musk to call GLP-1 drugs 'the single biggest positive effect on healthcare and quality of life in the 21st century'. We delve into the factors driving their meteoric demand, analyze their intricate supply chain, and highlight opportunities for listed Indian players. Whether you're an investor or simply curious about groundbreaking advancements, we believe this is a story worth knowing. Hope you enjoy the read!",
+      desc: "In this letter, we explore the transformative rise of GLP-1 drugs, which have captured global attention as revolutionary weight-loss treatments. Brands like Ozempic and Wegovy have sparked widespread buzz, even prompting Elon Musk to call GLP-1 drugs 'the single biggest positive effect on healthcare and quality of life in the 21st century'. We delve into the factors driving their meteoric demand, analyze their intricate supply chain, and highlight opportunities for listed Indian players. Whether you're an investor or simply curious about groundbreaking advancements, we believe this is a story worth knowing.",
       date: "6 January 2025",
       link: "https://drive.google.com/file/d/1Y95O-YayCF47C9frdtercKF4AZlHLR1l/view",
     },
       {
       id: 4,
       heading: "Q4FY25 Update",
-      desc: "In this letter, we deep dive into a disruptive force transforming one of the world’s oldest luxury industries: lab-grown diamonds (LGDs). What began as a niche is now triggering a structural shift across the global jewellery value chain—challenging long-standing cartels and unlocking opportunities for new, nimble players. We break down what LGDs are, how their value chain works, why prices have collapsed (and why they may now be near a floor), and highlight where promising opportunities may lie. Whether you're intrigued by innovation or interested in the future of jewellery, this is a story worth knowing. Hope you enjoy the read!",
+      desc: "In this letter, we deep dive into a disruptive force transforming one of the world’s oldest luxury industries: lab-grown diamonds (LGDs). What began as a niche is now triggering a structural shift across the global jewellery value chain—challenging long-standing cartels and unlocking opportunities for new, nimble players. We break down what LGDs are, how their value chain works, why prices have collapsed (and why they may now be near a floor), and highlight where promising opportunities may lie. Whether you're intrigued by innovation or interested in the future of jewellery, this is a story worth knowing.",
       date: "12 April 2025",
       link: "https://drive.google.com/file/d/1abQiKGGeC1tfb5_aw2LBRyw1aat-K9hy/view?usp=drive_link",
     },
@@ -45,7 +45,7 @@ export const navItems = [
             {
       id: 6,
       heading: "Q2FY26 Update",
-      desc: "In this letter, we analyze the drone revolution that is upending the economics of traditional military warfare, flipping the cost-exchange ratio by thousands to one. This transformation has created a dual, decadal investment opportunity: drones for cost-asymmetric offense and counter-drones (C-UAS) for survival. We quantify the shifting investment landscape, outlining India's drone and counter-drone roadmap. We also map the value chain to estimate where the profit pools would migrate to. We believe this is a structural shift that will create a new defense-industrial order for years to come. Hope you enjoy the read!",
+      desc: "In the ongoing Russia-Ukraine war, in one of the operations, Ukraine used just $200k worth of drones to destroy $7 billion worth of Russian fighter jets, a striking example of how drones are rewriting the economics of warfare.In this letter, we explore this shift and the massive investment opportunity it has created: low-cost drones that dominate offense and counter-drone systems vital for defense. We quantify the shifting investment landscape, outlining India's drone and counter-drone roadmap and map the value chain to estimate where the profit pools would migrate to. We believe this is a structural shift that will create a new defense-industrial order for years to come.",
       date: "10 October 2025",
       link: "https://drive.google.com/file/d/14L7puo3L_aFUFd-vkOi7KwX9o13nTe_p/view?usp=drive_link",
       }
@@ -103,4 +103,5 @@ export const navItems = [
       phiimg: "/hands.svg"
     }
   ]
+
 
