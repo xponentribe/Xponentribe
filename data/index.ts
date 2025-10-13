@@ -40,14 +40,14 @@ export const navItems = [
       heading: "Q1FY26 Update",
       desc: "We are excited to share our Q1 FY26 update—a milestone that also marks one full year of Xponent Tribe. To all our early supporters, thank you for your trust. It has meant everything. This letter is different. It goes beyond performance. It unpacks a worldview that shapes every decision we make at the firm—the belief that markets are not machines, but complex, adaptive systems. And that as humans, we are naturally wired to fail in them. You may have heard this from us in parts. But this is the full picture. If you’ve ever felt confused when good stocks fall, or watched a rally make no sense—this letter is for you. It won’t promise certainty. But it might change how you think about uncertainty.",
       date: "15 July 2025",
-      link: "https://drive.google.com/file/d/1tZpKKL4nDZRDDvVozi7PxEMRJLcVL8sa/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/14L7puo3L_aFUFd-vkOi7KwX9o13nTe_p/view?usp=drive_link",
       },
             {
       id: 6,
       heading: "Q2FY26 Update",
       desc: "In the ongoing Russia-Ukraine war, in one of the operations, Ukraine used just $200k worth of drones to destroy $7 billion worth of Russian fighter jets, a striking example of how drones are rewriting the economics of warfare.In this letter, we explore this shift and the massive investment opportunity it has created: low-cost drones that dominate offense and counter-drone systems vital for defense. We quantify the shifting investment landscape, outlining India's drone and counter-drone roadmap and map the value chain to estimate where the profit pools would migrate to. We believe this is a structural shift that will create a new defense-industrial order for years to come.",
       date: "10 October 2025",
-      link: "https://drive.google.com/file/d/14L7puo3L_aFUFd-vkOi7KwX9o13nTe_p/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/1tZpKKL4nDZRDDvVozi7PxEMRJLcVL8sa/view?usp=drive_link",
       }
   ]
 
@@ -103,5 +103,6 @@ export const navItems = [
       phiimg: "/hands.svg"
     }
   ]
+
 
 
