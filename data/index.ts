@@ -48,7 +48,13 @@ export const navItems = [
       desc: "In the ongoing Russia-Ukraine war, in one of the operations, Ukraine used just $200k worth of drones to destroy $7 billion worth of Russian fighter jets, a striking example of how drones are rewriting the economics of warfare.In this letter, we explore this shift and the massive investment opportunity it has created: low-cost drones that dominate offense and counter-drone systems vital for defense. We quantify the shifting investment landscape, outlining India's drone and counter-drone roadmap and map the value chain to estimate where the profit pools would migrate to. We believe this is a structural shift that will create a new defense-industrial order for years to come.",
       date: "10 October 2025",
       link: "https://drive.google.com/file/d/1tZpKKL4nDZRDDvVozi7PxEMRJLcVL8sa/view?usp=drive_link",
-      }
+      },
+      {
+        id: 7,
+        heading: "Q3FY2026",
+        desc: "In mid-2024, Ryanair publicly acknowledged that delayed Boeing 737 MAX deliveries were forcing it to cap growth and extend the life of older aircraft. Passenger demand was strong; aircraft availability from manufacturers was not. Similar dynamics have played out at Lufthansa Group and Air New Zealand, where delivery delays and supply-chain disruptions at OEMs and their suppliers have become the binding constraint on fleet growth. This paradox now defines global commercial aerospace. Order books are full, load factors are elevated, and visibility extends well into the next decade—yet aircraft deliveries remain structurally below prior peaks. The bottleneck sits upstream in the traditional aerospace manufacturing system, strained by labour shortages, cost inflation, certification intensity, and weakened supplier balance sheets across North America and Europe.",
+        date: "12 Jan 2026",
+        link: "https://drive.google.com/file/d/1aUjFK4f1zlUOO9DRbfbPvLKWHx_iayh-/view?usp=drivesdk"
   ]
 
   export const team = [
@@ -103,6 +109,7 @@ export const navItems = [
       phiimg: "/hands.svg"
     }
   ]
+
 
 
 
