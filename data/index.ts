@@ -53,7 +53,7 @@ export const navItems = [
         id: 7,
         heading: "Q3FY2026",
         desc: "In mid-2024, Ryanair publicly acknowledged that delayed Boeing 737 MAX deliveries were forcing it to cap growth and extend the life of older aircraft. Passenger demand was strong; aircraft availability from manufacturers was not. Similar dynamics have played out at Lufthansa Group and Air New Zealand, where delivery delays and supply-chain disruptions at OEMs and their suppliers have become the binding constraint on fleet growth. This paradox now defines global commercial aerospace. Order books are full, load factors are elevated, and visibility extends well into the next decade—yet aircraft deliveries remain structurally below prior peaks. The bottleneck sits upstream in the traditional aerospace manufacturing system, strained by labour shortages, cost inflation, certification intensity, and weakened supplier balance sheets across North America and Europe.",
-        date: "12 Jan 2026",
+        date: "12 January 2026",
         link: "https://drive.google.com/file/d/1aUjFK4f1zlUOO9DRbfbPvLKWHx_iayh-/view?usp=drivesdk"
       }
   ]
@@ -110,6 +110,7 @@ export const navItems = [
       phiimg: "/hands.svg"
     }
   ]
+
 
 
 
