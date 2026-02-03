@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://bit.ly/xponent-complaints-status"
+                    href="https://drive.google.com/file/d/1KTwxBZ0Bj9rdUIu5JlRDc4jwq41FzTBF/view?usp=drive_link"
                     className="hover:text-teal-400"
                     target="_blank"
                   >
@@ -56,7 +56,7 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium pl-4">
                 <li className="mb-4">
                   <a
-                    href="https://drive.google.com/file/d/10E92-zp9V1XXa0Ge8fCf6S_yf6o9Kk1V/view?usp=drive_link"
+                    href="https://bit.ly/xponent-complaints-status"
                     className="hover:text-teal-400"
                     target="_blank"
                   >
@@ -180,5 +180,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
