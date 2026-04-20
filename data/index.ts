@@ -55,6 +55,13 @@ export const navItems = [
         desc: "In mid-2024, Ryanair publicly acknowledged that delayed Boeing 737 MAX deliveries were forcing it to cap growth and extend the life of older aircraft. Passenger demand was strong; aircraft availability from manufacturers was not. Similar dynamics have played out at Lufthansa Group and Air New Zealand, where delivery delays and supply-chain disruptions at OEMs and their suppliers have become the binding constraint on fleet growth. This paradox now defines global commercial aerospace. Order books are full, load factors are elevated, and visibility extends well into the next decade—yet aircraft deliveries remain structurally below prior peaks. The bottleneck sits upstream in the traditional aerospace manufacturing system, strained by labour shortages, cost inflation, certification intensity, and weakened supplier balance sheets across North America and Europe.",
         date: "12 January 2026",
         link: "https://drive.google.com/file/d/1aUjFK4f1zlUOO9DRbfbPvLKWHx_iayh-/view?usp=drivesdk"
+      },
+      {
+        id: 8,
+        heading: "Q4FY2026",
+        desc: "Every time someone asks ChatGPT a question, a physical machine in a physical building does the work. These buildings are called data centres, and the global spend on them now rivals the largest industrial cycles in history. Every model release, every new AI feature, and every step up in capability depends on a buildout of concrete, copper, steel, transformers, GPUs, fibre, and cooling systems that has to happen first. Hyperscalers alone are committing capital at a pace that would have been unthinkable just a few years ago.To better understand it, we went back to first principles. We figured out what a data centre actually is, layer by layer: generation, distribution, compute, cooling, networking. Each layer solves a different physical problem. Generation brings the electricity onto the site. Distribution moves it from the grid to the server rack without frying anything along the way. Compute is where the actual intelligence gets produced. Cooling lets those servers run flat out without melting themselves. Networking lets tens of thousands of GPUs behave as if they were one giant machine. Once you see the layers cleanly, you can trace any component, any company, any headline back to the problem it is solving.If you have been trying to make sense of the AI infrastructure, this letter is for you.",
+        date: "20 April 2026",
+        link: "https://drive.google.com/file/d/1aUjFK4f1zlUOO9DRbfbPvLKWHx_iayh-/view?usp=drivesdk"
       }
   ]
 
