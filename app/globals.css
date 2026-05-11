@@ -70,12 +70,15 @@
   * {
     @apply !scroll-smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   button {
     @apply active:outline-none;
   }
+
   html {
     @apply scroll-smooth;
   }

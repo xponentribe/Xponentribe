@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-white pt-36">
+      <main id="main-content" role="main" className="bg-white pt-36">
         <div>
           <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
             Our <span className="text-teal-400">Blogs</span>
@@ -18,7 +18,7 @@ const Blog = () => {
         <div className="grid place-items-center">
           <Lottie animationData={animationData} className="h-96" />
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

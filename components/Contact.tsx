@@ -50,20 +50,23 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-white pb-20 pt-32">
+      <main id="main-content" role="main" className="bg-white pb-20 pt-32">
         <div>
-          <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-3xl lg:text-3xl sm:p-8">
+          <h2 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-3xl lg:text-3xl sm:p-8">
             Connect with us for PMS direct onboarding or other queries
-          </h1>{" "}
+          </h2>{" "}
         </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-1">
           <Lottie animationData={animationData} className="h-96" />
           <form className="lg:p-16 md:p-8 p-8" onSubmit={handleSubmit}>
+            <p className="text-sm text-gray-600 mb-4 italic">
+              Fields marked with * are required
+            </p>
             <label
               htmlFor="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your Email
+              Your Email*
             </label>
             <div className="relative mb-6">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -82,7 +85,7 @@ const Contact = () => {
                 type="email"
                 value={email}
                 id="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-600 focus:border-teal-600 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                 placeholder="Enter Your Email"
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -92,7 +95,7 @@ const Contact = () => {
               htmlFor="name"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your Name
+              Your Name*
             </label>
             <div className="flex">
               <span className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
@@ -112,7 +115,7 @@ const Contact = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-teal-600 focus:border-teal-600 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                 placeholder="Enter Your Name"
               />
             </div>
@@ -121,47 +124,48 @@ const Contact = () => {
               htmlFor="message"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white pt-6"
             >
-              Your message
+              Your message*
             </label>
             <textarea
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-teal-600 focus:border-teal-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Write your thoughts here..."
             ></textarea>
             <button
               type="submit"
-              className="text-white mt-6 bg-teal-400 hover:bg-teal-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className="text-white mt-6 bg-teal-600 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-teal-600 dark:hover:bg-teal-700 transition-colors"
             >
               Submit
             </button>
-            {status && (
-              <p
-                className={`p-4 mb-4 text-sm rounded-lg bg-green-50 dark:bg-gray-800  ${
-                  status.type === "success" ? "text-green-500" : "bg-red-500"
-                }`}
-              >
-                {status.message}
-              </p>
-            )}
+            <div role="status" aria-live="polite" aria-atomic="true">
+              {status && (
+                <p
+                  className={`p-4 mb-4 text-sm rounded-lg ${status.type === "success"
+                      ? "bg-green-50 text-green-800"
+                      : "bg-red-50 text-red-800"
+                    }`}
+                >
+                  {status.message}
+                </p>
+              )}
+            </div>
           </form>
         </div>
-        
-         <div className="relative w-full pb-[56.25%] overflow-hidden">
-  <iframe
-    title="Google Maps Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.967881961472!2d72.8350928!3d19.0651497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9114026a91%3A0xc53b6407e4d39f76!2sMakhija%20Arcade%2C%2035th%20Rd%2C%20Khar%20West%2C%20Mumbai%2C%20Maharashtra%20400052!5e0!3m2!1sen!2sin!4v1732940169344!5m2!1sen!2sin"
-    className="absolute top-0 left-0 w-full h-full border-0"
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
 
-        
-      </div>
+        <div className="relative w-full pb-[56.25%] overflow-hidden">
+          <iframe
+            title="Google Maps Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.967881961472!2d72.8350928!3d19.0651497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9114026a91%3A0xc53b6407e4d39f76!2sMakhija%20Arcade%2C%2035th%20Rd%2C%20Khar%20West%2C%20Mumbai%2C%20Maharashtra%20400052!5e0!3m2!1sen!2sin!4v1732940169344!5m2!1sen!2sin"
+            className="absolute top-0 left-0 w-full h-full border-0"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </main>
       <Footer />
     </>
   );

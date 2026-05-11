@@ -12,10 +12,10 @@ const Team = () => {
     <>
       <Navbar />
 
-      <div className="pt-24 bg-white">
+      <main id="main-content" role="main" className="pt-24 bg-white">
         <div>
           <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
-            Founding <span className="text-teal-400">Team</span>
+            Founding <span className="text-teal-600">Team</span>
           </h1>
         </div>
         <div className="cards pt-24 pb-24 grid place-items-center sm:grid-cols-1">
@@ -25,38 +25,38 @@ const Team = () => {
                 width={200}
                 height={200}
                 src={item.img}
-                alt=""
+                alt={`${item.name} - ${item.position}`}
                 className="img h-auto w-screen object-cover "
               />
               <div
                 className="content h-screen"
                 style={{ backgroundColor: "#0000006b" }}
               >
-                <h1 className="font-bold text-2xl text-white">
+                <h2 className="font-bold text-2xl text-white">
                   {item.name}
                   <span className="text-sm text-gray-400 float-right">
                     more{" "}
                   </span>
-                </h1>
-                <h4 className="text-xl font-bold text-teal-400 mt-1">
+                </h2>
+                <p className="text-xl font-bold text-teal-400 mt-1">
                   {item.position}
-                </h4>
+                </p>
                 <p>{item.desc1}</p>
                 <p>{item.desc2}</p>
                 <span className="flex">
-                  <a href={item.linkedin} target="_blank">
+                  <a href={item.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${item.name}'s LinkedIn profile (opens in a new window)`}>
                     <Image
                       src={linkedin}
-                      alt={""}
+                      alt=""
                       width={25}
                       height={25}
                       className="bg-white mx-2"
                     />
                   </a>
-                  <a href={item.twitter} target="_blank">
+                  <a href={item.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${item.name}'s Twitter profile (opens in a new window)`}>
                     <Image
                       src={twitter}
-                      alt={""}
+                      alt=""
                       width={25}
                       height={25}
                       className="bg-white mx-2"
@@ -67,7 +67,7 @@ const Team = () => {
             </div>
           ))}
         </div>
-      </div>
+      </main>
 
       <Footer />
     </>

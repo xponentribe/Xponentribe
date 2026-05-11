@@ -133,24 +133,30 @@ const SubscriptionForm: React.FC = () => {
           {!showForm ? (
             <button
               onClick={() => setShowForm(true)}
-              className="bg-white border-2 border-teal-200 text-teal-400 font-bold p-2 rounded-lg m-4 text-sm"
+              className="bg-white border-2 border-teal-600 text-teal-600 hover:bg-teal-50 font-bold p-2 rounded-lg m-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
             >
               Subscribe to our letters
             </button>
           ) : (
             <form onSubmit={handleSubmit} className="grid place-items-center">
+              <label
+                htmlFor="email"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Email Address
+              </label>
               <input
                 type="email"
                 value={email}
                 id="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-teal-600 focus:border-teal-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
               />
               <button
                 type="submit"
-                className="text-white mt-6 bg-teal-400 hover:bg-teal-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                className="text-white mt-6 bg-teal-600 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-teal-600 dark:hover:bg-teal-700 focus:outline-none dark:focus:ring-teal-800 transition-colors"
               >
                 Submit
               </button>
@@ -161,12 +167,29 @@ const SubscriptionForm: React.FC = () => {
         <div className="grid place-items-center">
           <button
             disabled
-            className="bg-white border-2 border-red-200 text-red-400 font-bold p-2 rounded-lg m-4 text-sm"
+            className="bg-white border-2 border-red-200 text-red-600 font-bold p-2 rounded-lg m-4 text-sm"
           >
             Subscribed
           </button>
         </div>
       )}
+      <div
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        className="text-center"
+      >
+        {status && (
+          <p
+            className={`p-4 mb-4 text-sm rounded-lg ${status.type === "success"
+                ? "bg-green-50 text-green-800"
+                : "bg-red-50 text-red-800"
+              }`}
+          >
+            {status.message}
+          </p>
+        )}
+      </div>
     </div>
   );
 };

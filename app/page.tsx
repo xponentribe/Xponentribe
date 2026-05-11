@@ -1,11 +1,16 @@
 import Hero from "@/components/Hero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | Xponent Tribe",
+};
 
 export default function Home() {
   return (
-    <main className="relative bg-white-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <>
       <div className="w-screen">
         <Hero />
       </div>
-    </main>
+    </>
   );
 }
