@@ -34,7 +34,7 @@ const Team = () => {
               >
                 <h2 className="font-bold text-2xl text-white">
                   {item.name}
-                  <span className="text-sm text-gray-400 float-right">
+                  <span className="text-sm text-gray-400 float-right" role="presentation">
                     more{" "}
                   </span>
                 </h2>

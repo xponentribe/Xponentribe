@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       <Navbar />
       <main id="main-content" role="main" className="pt-32 bg-white">
-        <h1 className="sr-only">Home</h1>
+        <h1 className="sr-only">Welcome Xponent Tribe</h1>
         <div className=" w-full  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center " />
@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="max-w-[89vw] h-full md:max-w-2xl lg:max-w-[89vw] grid lg:grid-cols-2 place-items-center md:grid-cols-1">
             <Image src={Logo} alt="Xponent Tribe logo" width={500} height={500} />
             <div className="pt-16">
-              <p className="text-center text-[40px] md:text-5xl lg:text-6xl text-black leading-snug tracking-wide font-bold" aria-hidden="true">
+              <p className="text-center text-[40px] md:text-5xl lg:text-6xl text-black leading-snug tracking-wide font-bold" role="presentation">
                 A = P*(1 + r)
                 <span className="text-center text-[40px] md:text-5xl lg:text-6xl text-teal-400 leading-snug tracking-wide font-bold">
                   ^

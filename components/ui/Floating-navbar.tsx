@@ -7,24 +7,60 @@ export default function Navbar() {
   const [isHamburger, setIsHamburger] = useState(false);
   const [isShow0, setIsShow0] = useState(false);
   const [isShow1, setIsShow1] = useState(false);
+  const [isMd, setIsMd] = useState(false);
+  const [isLg, setIsLg] = useState(false);
+
+  useEffect(() => {
+    const mediaMd = window.matchMedia("(min-width: 768px)");
+    const mediaLg = window.matchMedia("(min-width: 1024px)");
+    
+    const listenerMd = () => setIsMd(mediaMd.matches);
+    const listenerLg = () => setIsLg(mediaLg.matches);
+
+    setIsMd(mediaMd.matches);
+    setIsLg(mediaLg.matches);
+
+    mediaMd.addEventListener("change", listenerMd);
+    mediaLg.addEventListener("change", listenerLg);
+
+    return () => {
+      mediaMd.removeEventListener("change", listenerMd);
+      mediaLg.removeEventListener("change", listenerLg);
+    };
+  }, []);
 
   const aboutRef = useRef<HTMLButtonElement>(null);
   const insightsRef = useRef<HTMLButtonElement>(null);
+  const timeoutRef0 = useRef<any>(null);
+  const timeoutRef1 = useRef<any>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef0.current) clearTimeout(timeoutRef0.current);
+      if (timeoutRef1.current) clearTimeout(timeoutRef1.current);
+    };
+  }, []);
 
   const handleMouseOver = () => {
+    if (timeoutRef0.current) clearTimeout(timeoutRef0.current);
     setIsShow0(true);
   };
 
   const handleMouseOut = () => {
-    setIsShow0(false);
+    timeoutRef0.current = setTimeout(() => {
+      setIsShow0(false);
+    }, 150);
   };
 
   const handleMouseOver1 = () => {
+    if (timeoutRef1.current) clearTimeout(timeoutRef1.current);
     setIsShow1(true);
   };
 
   const handleMouseOut1 = () => {
-    setIsShow1(false);
+    timeoutRef1.current = setTimeout(() => {
+      setIsShow1(false);
+    }, 150);
   };
 
   const toggleAbout = () => setIsShow0(!isShow0);
@@ -73,7 +109,13 @@ export default function Navbar() {
       </a>
       <div className="flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0 mx-20">
         <div className="flex items-center justify-start gap-x-16 sm:gap-x-0">
-          <a href="/" aria-label="Xponent Tribe Home">
+          <a
+            href="/"
+            aria-label={isLg ? undefined : "Xponent Tribe Home"}
+            role={isLg ? "presentation" : undefined}
+            aria-hidden={isLg ? "true" : undefined}
+            tabIndex={isLg ? -1 : undefined}
+          >
             <Image
               src="/XT-02.svg"
               width={80}
@@ -84,9 +126,12 @@ export default function Navbar() {
           </a>
           <button
             type="button"
-            aria-label="Open navigation menu"
-            aria-haspopup="true"
-            aria-expanded={isHamburger}
+            aria-label={isMd ? undefined : "Open navigation menu"}
+            aria-haspopup={isMd ? undefined : "true"}
+            aria-expanded={isMd ? undefined : isHamburger}
+            role={isMd ? "presentation" : undefined}
+            aria-hidden={isMd ? "true" : undefined}
+            tabIndex={isMd ? -1 : undefined}
             className="md:hidden relative left-24 md:left"
             onClick={() => setIsHamburger(true)}
           >
@@ -105,7 +150,7 @@ export default function Navbar() {
           </button>
 
           <nav
-            aria-label="Main Navigation"
+            aria-label="main"
             className="relative z-10 max-w-max flex-1 items-center justify-center hidden md:flex"
           >
             <div
@@ -163,7 +208,7 @@ export default function Navbar() {
                   {isShow0 && (
                     <div
                       id="about-menu"
-                      className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 w-[165px] overflow-hidden rounded-md border bg-white text-popover-foreground shadow-lg z-50"
+                      className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 w-[165px] overflow-hidden rounded-md border bg-white text-popover-foreground shadow-lg z-50 before:content-[''] before:absolute before:-top-1.5 before:left-0 before:w-full before:h-1.5"
                       onMouseOver={handleMouseOver}
                       onMouseOut={handleMouseOut}
                     >
@@ -222,7 +267,7 @@ export default function Navbar() {
                   {isShow1 && (
                     <div
                       id="insights-menu"
-                      className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 w-[165px] overflow-hidden rounded-md border bg-white text-popover-foreground shadow-lg z-50"
+                      className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 w-[165px] overflow-hidden rounded-md border bg-white text-popover-foreground shadow-lg z-50 before:content-[''] before:absolute before:-top-1.5 before:left-0 before:w-full before:h-1.5"
                       onMouseOver={handleMouseOver1}
                       onMouseOut={handleMouseOut1}
                     >
