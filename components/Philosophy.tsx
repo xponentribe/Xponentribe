@@ -9,7 +9,7 @@ const Philosophy = () => {
   return (
     <>
       <Navbar />
-      <main id="main-content" role="main">
+      <main id="main-content" role="main" className="bg-white">
         <div className="projcard-container ">
           <div>
             <h1 className="text-center text-black leading-snug font-bold tracking-wide text-[40px] md:text-5xl lg:text-6xl">
