@@ -103,7 +103,7 @@ export default function Navbar() {
     <header role="banner" className="fixed top-0 z-40 w-screen bg-white shadow-gray-300 shadow-lg">
       <a
         href="#main-content"
-        className="absolute left-0 top-0 z-50 m-3 -translate-y-16 bg-teal-400 px-4 py-2 text-white transition-transform focus:translate-y-0 sr-only focus:not-sr-only"
+        className="absolute left-0 top-0 z-50 m-3 -translate-y-16 bg-teal-700 px-4 py-2 text-white transition-transform focus:translate-y-0 sr-only focus:not-sr-only"
       >
         Skip to main content
       </a>
@@ -168,7 +168,7 @@ export default function Navbar() {
               <ul className="group flex flex-1 list-none items-center justify-center space-x-1 relative">
                 <li>
                   <a
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700"
                     href="/"
                   >
                     Home
@@ -181,7 +181,7 @@ export default function Navbar() {
                     aria-haspopup="true"
                     aria-expanded={isShow0}
                     aria-controls="about-menu"
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700"
                     onMouseOver={handleMouseOver}
                     onMouseOut={handleMouseOut}
                     onClick={toggleAbout}
@@ -240,7 +240,7 @@ export default function Navbar() {
                     aria-haspopup="true"
                     aria-expanded={isShow1}
                     aria-controls="insights-menu"
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700"
                     onMouseOver={handleMouseOver1}
                     onMouseOut={handleMouseOut1}
                     onClick={toggleInsights}
@@ -286,7 +286,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                    className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-[#f1f5f9] hover:text-accent-foreground focus:bg-[#f1f5f9] focus:text-accent-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-700"
                     href="/contact"
                   >
                     Contact
@@ -325,17 +325,17 @@ export default function Navbar() {
                 </h2>
               </div>
               <nav className="flex flex-col gap-3 ml-8" aria-label="Mobile Navigation">
-                <a className="flex items-center text-md text-primary font-normal hover:text-teal-400" href="/" onClick={() => setIsHamburger(false)}>Home</a>
-                <a className="flex items-center text-md text-primary font-normal hover:text-teal-400" href="/team" onClick={() => setIsHamburger(false)}>Team</a>
-                <a className="flex items-center text-md text-primary font-normal hover:text-teal-400" href="/philosophy" onClick={() => setIsHamburger(false)}>Philosophy</a>
-                <a className="flex items-center text-md text-primary font-normal hover:text-teal-400" href="/letter" onClick={() => setIsHamburger(false)}>Letters</a>
-                <a className="flex items-center text-md text-primary font-normal hover:text-teal-400" href="/contact" onClick={() => setIsHamburger(false)}>Contact</a>
+                <a className="flex items-center text-md text-primary font-normal hover:text-teal-700" href="/" onClick={() => setIsHamburger(false)}>Home</a>
+                <a className="flex items-center text-md text-primary font-normal hover:text-teal-700" href="/team" onClick={() => setIsHamburger(false)}>Team</a>
+                <a className="flex items-center text-md text-primary font-normal hover:text-teal-700" href="/philosophy" onClick={() => setIsHamburger(false)}>Philosophy</a>
+                <a className="flex items-center text-md text-primary font-normal hover:text-teal-700" href="/letter" onClick={() => setIsHamburger(false)}>Letters</a>
+                <a className="flex items-center text-md text-primary font-normal hover:text-teal-700" href="/contact" onClick={() => setIsHamburger(false)}>Contact</a>
               </nav>
 
               <button
                 type="button"
                 aria-label="Close menu"
-                className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-teal-400"
+                className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-teal-700"
                 onClick={() => setIsHamburger(false)}
               >
                 <svg

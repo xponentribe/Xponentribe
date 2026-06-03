@@ -1,3 +1,10 @@
+/* Color contrast ratio settings (ensuring >= 3:1 contrast ratio, WCAG AA compliant) */
+:root {
+  --navbar-contrast-bg: #0f766e; /* teal-700 - Contrast ratio 5.5:1 with white */
+  --navbar-contrast-text: #ffffff;
+  --navbar-contrast-hover: #0f766e; /* teal-700 - Contrast ratio 5.5:1 with white */
+}
+
 @media screen and (max-width: 1440px) {
   .about {
     left: 105vh;
