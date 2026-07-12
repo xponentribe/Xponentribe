@@ -18,11 +18,13 @@ export async function POST(req: NextRequest) {
     });
 
     if (error) {
-      return Response.json({ error }, { status: 500 });
+      console.error("Resend API error:", error);
+      return Response.json({ error: "Failed to send email. Please try again later." }, { status: 500 });
     }
 
     return Response.json({ data });
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
-  }
+    console.error("Unexpected error in send route:", error);
+    return Response.json({ error: "Internal Server Error" }, { status: 500 });
+  }
 }
