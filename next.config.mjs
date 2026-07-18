@@ -27,11 +27,11 @@ const nextConfig = {
           },
           {
             key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()',
+            value: 'camera=(), microphone=(), geolocation=(), payment=()',
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; frame-src 'self' https://www.google.com; frame-ancestors 'self'; connect-src 'self';",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; frame-src 'self' https://www.google.com https://maps.google.com; frame-ancestors 'self'; connect-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self';",
           },
           {
             key: 'Access-Control-Allow-Origin',
