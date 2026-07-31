@@ -96,9 +96,10 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="mailto:contact@xponentribe.com"
+                    href="https://drive.google.com/file/d/1-472xUmiqrB5DFMn5axIsuVm6no5A6eO/view?usp=drive_link"
                     className="hover:text-teal-600 transition-colors"
                     aria-label="Investor Grievance (Send Email)"
+                    target="_blank"
                   >
                     Investor Grievance
                   </a>
