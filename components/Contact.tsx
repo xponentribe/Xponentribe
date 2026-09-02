@@ -11,6 +11,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<{
     message: string;
     type: "success" | "error";
@@ -20,7 +21,7 @@ const Contact = () => {
     if (status) {
       const timer = setTimeout(() => {
         setStatus(null);
-      }, 3000);
+      }, 4000);
 
       return () => clearTimeout(timer);
     }
@@ -28,23 +29,30 @@ const Contact = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    if (isLoading) return;
+
+    setIsLoading(true);
+    setStatus(null);
+
     try {
       const response = await axios.post(`/api/send`, {
-        //${process.env.URL}
-        name,
-        email,
-        message,
+        name: name.trim(),
+        email: email.trim(),
+        message: message.trim(),
       });
       console.log("Response:", response);
 
       setStatus({ message: "Email sent successfully!", type: "success" });
-      // Clear the form fields
       setName("");
       setEmail("");
       setMessage("");
-    } catch (error) {
-      setStatus({ message: "Failed to send email.", type: "error" });
-      console.error("Error:");
+    } catch (error: any) {
+      const errorMessage =
+        error?.response?.data?.error || "Failed to send email. Please try again.";
+      setStatus({ message: errorMessage, type: "error" });
+      console.error("Error:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -136,9 +144,10 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="text-white mt-6 bg-teal-600 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-teal-600 dark:hover:bg-teal-700 transition-colors"
+              disabled={isLoading}
+              className="text-white mt-6 bg-teal-600 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-teal-600 dark:hover:bg-teal-700 transition-colors disabled:opacity-50"
             >
-              Submit
+              {isLoading ? "Submitting..." : "Submit"}
             </button>
             <div role="status" aria-live="polite" aria-atomic="true">
               {status && (
