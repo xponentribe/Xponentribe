@@ -74,7 +74,7 @@ export const letter = [
     id: 10,
     heading: "Q2FY27 Update",
     desc: "In the 1971 war with Pakistan, India deployed L-70 anti-aircraft guns to protect its airfields from attacking aircraft. During Operation Sindoor, upgraded versions of the same gun were used against incoming drones. The gun still fires shells, but it now finds and follows its target using thermal cameras, a laser rangefinder, automatic tracking and a digital fire-control computer. Across military equipment, a growing share of what a weapon can do now comes from the electronics inside it. In this letter, we size India’s defence electronics opportunity and explain how it grows as the capital budget rises and as more electronics, increasingly sourced from Indian suppliers, go into each platform. We trace how a headline order moves down the supply chain from platform primes to the companies making modules and chips. We then look inside radars, electronic warfare, sights, seekers and radios, and at the building blocks of these systems. If you have ever wanted understand how modern defence equipment works, what goes into it and where Indian companies have built genuine capability, this letter is for you.",
-    date: "25 October 2006",
+    date: "25 October 2026",
     link: "https://drive.google.com/file/d/1kx4yOQ-2mfnDhhOtY7vkJKtiGgvq3zFK/view?usp=drive_link",
   },
 ]
