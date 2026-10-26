@@ -69,7 +69,14 @@ export const navItems = [
         desc: "As we complete two years at Xponent Tribe, we have once again used our annual letter as an opportunity to discuss one of the investment frameworks that shapes our thinking. This year, we explore our Supply Side Framework, examining both its current state and the end state we believe it can evolve toward. Through case studies drawn from industries such as BOPP films, paints, electric vehicles, and third party logistics, we explain how this framework helps us understand industry structure and the direction in which competitive dynamics may evolve. While no single framework determines an investment decision, this has been one of the most valuable tools in our toolkit. We hope you enjoy reading it.",
         date: "15 July 2026",
         link: "https://drive.google.com/file/d/1Mq1NfWYkAhUie7ubOfZg1geyUUJkA_td/view?usp=drive_link"
-      }
+      },
+          {
+      id: 10,
+      heading: "Q2FY27 Update",
+      desc: "In the 1971 war with Pakistan, India deployed L-70 anti-aircraft guns to protect its airfields from attacking aircraft. During Operation Sindoor, upgraded versions of the same gun were used against incoming drones. The gun still fires shells, but it now finds and follows its target using thermal cameras, a laser rangefinder, automatic tracking and a digital fire-control computer. Across military equipment, a growing share of what a weapon can do now comes from the electronics inside it. In this letter, we size India’s defence electronics opportunity and explain how it grows as the capital budget rises and as more electronics, increasingly sourced from Indian suppliers, go into each platform. We trace how a headline order moves down the supply chain from platform primes to the companies making modules and chips. We then look inside radars, electronic warfare, sights, seekers and radios, and at the building blocks of these systems. If you have ever wanted understand how modern defence equipment works, what goes into it and where Indian companies have built genuine capability, this letter is for you.",
+      date: "25 October 2006",
+      link: "https://drive.google.com/file/d/1dURZUABByhwqOSGbZETNSXjful6ktQhU/view",
+    },
   ]
 
   export const team = [
