@@ -1,7 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import animationData from "../public/Animation - 1720448692637.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import Navbar from "./ui/Floating-navbar";
 import Footer from "./Footer";
 import { useState } from "react";

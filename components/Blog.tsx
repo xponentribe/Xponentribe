@@ -2,8 +2,10 @@
 import React from "react";
 import Navbar from "./ui/Floating-navbar";
 import Footer from "./Footer";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 import animationData from "../public/underconstruction.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Blog = () => {
   return (
